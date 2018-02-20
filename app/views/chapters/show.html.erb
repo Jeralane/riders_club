@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @chapter.area %>
+</p>
+
+<p>
+  <strong>Club:</strong>
+  <%= @chapter.club %>
+</p>
+
+<p>
+  <strong>Main:</strong>
+  <%= @chapter.main %>
+</p>
+
+<%= link_to 'Edit', edit_chapter_path(@chapter) %> |
+<%= link_to 'Back', chapters_path %>

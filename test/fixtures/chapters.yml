@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area: MyString
+  club: one
+  main: false
+
+two:
+  area: MyString
+  club: two
+  main: false
