@@ -4,7 +4,7 @@ class ClubsController < ApplicationController
   # GET /clubs
   # GET /clubs.json
   def index
-    @clubs = Club.all
+    @clubs = Club.paginate(page: params[:page], per_page: 2)
   end
 
   # GET /clubs/1
@@ -64,7 +64,7 @@ class ClubsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_club
-      @club = Club.find(params[:id])
+      @club = Club.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
