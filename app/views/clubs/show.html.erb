@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag (@club.avatar.profile.url) if @club.avatar? %>
+
 <p>
   <strong>Name:</strong>
   <%= @club.name %>

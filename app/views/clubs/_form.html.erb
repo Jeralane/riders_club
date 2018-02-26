@@ -21,6 +21,11 @@
     <%= form.text_field :registration_code, id: :club_registartion_code %>
   </div>
 
+  <div class="form-group">
+    <%= form.label :avatar %>
+    <%= form.file_field :avatar %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
