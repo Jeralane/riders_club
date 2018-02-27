@@ -1,0 +1,11 @@
+%p#notice= notice
+= image_tag (@club.avatar.profile.url) if @club.avatar?
+%p
+  %strong Name:
+  = @club.name
+%p
+  %strong Registration Code:
+  = @club.registration_code
+= link_to 'Edit', edit_club_path(@club)
+|
+= link_to 'Back', clubs_path

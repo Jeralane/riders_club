@@ -59,6 +59,9 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'mini_magick', '~> 4.8'
+gem 'devise', '~> 4.4', '>= 4.4.1'
+gem 'haml', '~> 5.0', '>= 5.0.4'
+gem 'haml-rails', '~> 1.0'
 
 group :development do
   gem 'better_errors', '~> 2.4'

@@ -1,0 +1,20 @@
+= form_with(model: club, local: true) do |form|
+  - if club.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(club.errors.count, "error")
+        prohibited this club from being saved:
+      %ul
+        - club.errors.full_messages.each do |message|
+          %li= message
+  .form-group
+    = form.label :name
+    = form.text_field :name, id: :club_name, class: 'form-control'
+  .form-group
+    = form.label :registration_code
+    = form.text_field :registration_code, id: :club_registartion_code, class: 'form-control'
+  .form-group
+    = form.label :avatar
+    = form.file_field :avatar, class: 'form-control'
+  .actions
+    = form.submit class: 'btn btn-primary'

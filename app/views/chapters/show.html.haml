@@ -1,0 +1,13 @@
+%p#notice= notice
+%p
+  %strong Area:
+  = @chapter.area
+%p
+  %strong Club:
+  = @chapter.club
+%p
+  %strong Main:
+  = @chapter.main
+= link_to 'Edit', edit_chapter_path(@chapter)
+|
+= link_to 'Back', chapters_path
