@@ -8,5 +8,9 @@
         %label
           = f.check_box :remember_me
           Remember me
-    = f.submit 'Sign in', class: 'btn btn-primary'
+    = f.button 'Sign in',
+        type: 'submit',
+        class: 'btn btn-primary',
+        data: { disable_with: "<i class='fa fa-spinner fa-spin'></i> Signing in..." }
+
   = render 'devise/shared/links'

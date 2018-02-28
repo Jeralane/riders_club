@@ -1,4 +1,6 @@
-%p#notice= notice
+.pull-right
+  = link_to 'New Club', new_club_path
+
 %h1 Clubs
 %table
   %thead
@@ -15,5 +17,4 @@
         %td= link_to 'Edit', edit_club_path(club)
         %td= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
-= link_to 'New Club', new_club_path
 = will_paginate @posts, renderer: BootstrapPagination::Rails
